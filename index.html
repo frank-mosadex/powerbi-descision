@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Scenario's Power BI Workspace Uitrol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .scenario-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-6 md:p-12">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Automatische Uitrol van Power BI Workspaces
+            </h1>
+            <p class="text-lg text-gray-600">Analyse van scenario's voor integratie in het dataplatform</p>
+        </header>
+
+        <!-- Scenarios Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Scenario 1: Volledige Automatisering -->
+            <div class="scenario-card bg-white rounded-xl shadow-md border-t-4 border-red-500 p-6 flex flex-col">
+                <h2 class="text-xl font-bold mb-4">Scenario 1: Volledige Automatisering</h2>
+                <div class="space-y-4 flex-grow">
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-red-100 text-red-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Probleem & Gevolg</h3>
+                            <p class="text-gray-600 text-sm">Power BI API biedt geen ondersteuning voor het beheren van
+                                app audiences, waardoor automatische toevoeging van securitygroepen onmogelijk is.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-red-100 text-red-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Risico</h3>
+                            <p class="text-gray-600 text-sm">Technisch onuitvoerbaar. Geen verdere actie mogelijk.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">
+                        Niet haalbaar
+                    </span>
+                </div>
+            </div>
+
+            <!-- Scenario 2: Gedeeltelijke Automatisering (Aanbevolen) -->
+            <div
+                class="scenario-card bg-white rounded-xl shadow-xl border-t-4 border-green-500 p-6 flex flex-col ring-2 ring-green-500/50">
+                <h2 class="text-xl font-bold mb-4">Scenario 2: Gedeeltelijke Automatisering</h2>
+                <div class="space-y-4 flex-grow">
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-green-100 text-green-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Aanpak</h3>
+                            <p class="text-gray-600 text-sm">Platformteam richt standaard audience-groepen in. Data
+                                product teams voegen zelf securitygroepen toe volgens een vaste conventie.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-yellow-100 text-yellow-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Risico's</h3>
+                            <p class="text-gray-600 text-sm">Foutieve rechtentoewijzing mogelijk. Afhankelijk van
+                                duidelijke documentatie en naleving.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-blue-100 text-blue-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Verantwoordelijkheden</h3>
+                            <p class="text-gray-600 text-sm"><strong>Platformteam:</strong> Ontwerp, implementatie &
+                                support. <br><strong>Data product teams:</strong> Beheer securitygroepen & rechten.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                        Aanbevolen Oplossing
+                    </span>
+                </div>
+            </div>
+
+            <!-- Scenario 3: Volledige Verantwoordelijkheid bij Teams -->
+            <div class="scenario-card bg-white rounded-xl shadow-md border-t-4 border-yellow-500 p-6 flex flex-col">
+                <h2 class="text-xl font-bold mb-4">Scenario 3: Volledige Verantwoordelijkheid Data Teams</h2>
+                <div class="space-y-4 flex-grow">
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-blue-100 text-blue-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Aanpak & Gevolg</h3>
+                            <p class="text-gray-600 text-sm">Volledige autonomie bij data product teams. Platformteam is
+                                niet verantwoordelijk voor toegangsbeheer of governance.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-yellow-100 text-yellow-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Risico's</h3>
+                            <p class="text-gray-600 text-sm">Governancekaders niet geborgd. Verhoogd risico op
+                                ongeautoriseerde toegang. Geen centrale regie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                        Hoger Risico
+                    </span>
+                </div>
+            </div>
+
+            <!-- Scenario 4: Alleen Rapport Delen -->
+            <div class="scenario-card bg-white rounded-xl shadow-md border-t-4 border-yellow-500 p-6 flex flex-col">
+                <h2 class="text-xl font-bold mb-4">Scenario 4: Alleen Rapport Delen</h2>
+                <div class="space-y-4 flex-grow">
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-blue-100 text-blue-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12s-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.368a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Aanpak & Gevolg</h3>
+                            <p class="text-gray-600 text-sm">Rapporten worden direct gepubliceerd in de workspace.
+                                Iedereen met toegang ziet alle rapporten, zonder app-structuur.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-yellow-100 text-yellow-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Risico's</h3>
+                            <p class="text-gray-600 text-sm">Geen toegangscontrole op rapportniveau. Governanceproblemen
+                                door gebrek aan afscherming.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                        Hoger Risico
+                    </span>
+                </div>
+            </div>
+
+            <!-- Scenario 5: Alternatief (Excel) -->
+            <div class="scenario-card bg-white rounded-xl shadow-md border-t-4 border-gray-400 p-6 flex flex-col">
+                <h2 class="text-xl font-bold mb-4">Scenario 5: Alternatief (bv. Excel)</h2>
+                <div class="space-y-4 flex-grow">
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-gray-100 text-gray-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Aanpak & Gevolg</h3>
+                            <p class="text-gray-600 text-sm">Gebruik van alternatieve tools wijkt af van de
+                                organisatiestandaard. Power BI blijft de voorkeursoplossing.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="icon-bg bg-red-100 text-red-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg></div>
+                        <div>
+                            <h3 class="font-semibold">Risico's</h3>
+                            <p class="text-gray-600 text-sm">Fragmentatie van tooling, verlies van centrale governance
+                                en integratie met het dataplatform.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800">
+                        Ongewenst
+                    </span>
+                </div>
+            </div>
+
+            <!-- Empty grid item to push conclusion to the next row on large screens if there are 5 cards -->
+            <div></div>
+
+        </div>
+
+        <!-- Conclusion -->
+        <div class="mt-12 bg-blue-50 border-l-4 border-blue-500 p-8 rounded-r-lg">
+            <h2 class="text-2xl font-bold text-blue-900 mb-3">Conclusie & Advies</h2>
+            <p class="text-blue-800">
+                Volledige automatisering van Power BI-rechten is via de API momenteel <strong>technisch niet
+                    haalbaar</strong>.
+            </p>
+            <p class="text-blue-800 mt-2">
+                <strong>Scenario 2 (Gedeeltelijke Automatisering)</strong> biedt de meest werkbare en gebalanceerde
+                oplossing. Dit model combineert centrale standaardisatie door het platformteam met de nodige
+                flexibiliteit voor de data product teams. Voor een succesvolle implementatie zijn <strong>heldere
+                    afspraken, duidelijke documentatie en actieve governance</strong> van essentieel belang.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
